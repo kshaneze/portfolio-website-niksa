@@ -1,0 +1,274 @@
+/* primary color 2c4d2f, 204329 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Source Sans Pro";
+}
+
+header {
+}
+
+.header__content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  position: fixed;
+  background-color: white;
+}
+
+.header__content ul {
+  display: flex;
+  font-size: 19px;
+  text-transform: uppercase;
+}
+.header__content li {
+  margin-left: 60px;
+  text-align: center;
+  list-style: none;
+}
+
+.header__logo-img {
+  display: flex;
+
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  margin-left: 50px;
+}
+
+.header__logo-name {
+  margin-left: 15px;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: rgba(17, 16, 16, 0.774);
+}
+
+#navbar {
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+  margin-right: 50px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.navbar-link:link {
+  text-decoration: none;
+  color: rgba(17, 16, 16, 0.774);
+}
+.navbar-link:visited {
+  color: rgba(17, 16, 16, 0.774);
+}
+
+.about__me {
+  text-align: center;
+  height: 800px;
+  width: 100%;
+  background: linear-gradient(to left, #204329, #2c4d2f);
+  overflow: auto;
+}
+/* 204329 */
+.about__me-header {
+  margin-top: 27rem;
+  font-size: 6.1rem;
+  color: white;
+  text-transform: uppercase;
+}
+
+.about__me-text {
+  font-size: 2.3rem;
+  padding-top: 35px;
+  color: white;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.btn {
+  margin-top: 50px;
+  font-size: 19px;
+  text-transform: uppercase;
+  padding: 17px 80px 17px 80px;
+  background-color: white;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  color: rgba(17, 16, 16, 0.774);
+}
+
+.btn:hover {
+  background-color: rgb(228, 227, 226);
+}
+
+.btn:active {
+  transform: translateY(4px);
+}
+
+.container {
+  height: 800px;
+}
+.about__me-section {
+  overflow: hidden;
+}
+
+.intro {
+  text-align: center;
+  margin-top: 13rem;
+}
+
+h2 {
+  font-size: 45px;
+  text-transform: uppercase;
+}
+
+.about::after {
+  content: "";
+  position: absolute;
+  background-color: #204329;
+  height: 5px;
+  width: 3rem;
+  border-radius: 5px;
+  top: calc(100% + 6.5rem);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.about__me-paragraph {
+  font-size: 2rem;
+  margin-top: 30px;
+  padding: 15px;
+  color: rgb(104, 102, 102);
+}
+
+.section__to-know {
+  width: 1350px;
+  height: 350px;
+
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 60px;
+}
+
+.Get__toknow-me {
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 15px;
+}
+.get__toknowme-paragraph {
+  font-size: 1.9rem;
+  padding: 15px;
+  padding-right: 100px;
+  color: rgb(104, 102, 102);
+  line-height: 30px;
+  padding-bottom: 0;
+}
+
+.Get__toknowmy-skills {
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 15px;
+  display: flex;
+}
+.my__skills {
+  display: grid;
+  height: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
+  grid-template-rows: max-content;
+  font-size: 1.9rem;
+  padding: 15px;
+  color: rgb(114, 111, 111);
+  line-height: 30px;
+  grid-row-gap: 5px;
+  grid-column-gap: 5px;
+  font-weight: 600;
+  text-align: center;
+}
+.skill {
+  padding: 10px;
+  margin: 7px;
+
+  background-color: #e7e7e3;
+  border-radius: 5px;
+}
+.btn-green {
+  background-color: #204329;
+  color: white;
+  padding: 15px 40px 15px 40px;
+  font-size: 1.7rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-left: 10px;
+}
+.btn-green:hover {
+  background-color: #073d0b;
+}
+
+.section__projects {
+  text-align: center;
+  height: 800px;
+}
+
+.projects__headings {
+  font-size: 4.2rem;
+  margin-top: 8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.projects__headings::after {
+  content: "";
+  position: absolute;
+  background-color: #204329;
+  height: 5px;
+  width: 3rem;
+  border-radius: 5px;
+  top: calc(197% + 3.5rem);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.projects__paragraph {
+  font-size: 2rem;
+  color: rgb(104, 102, 102);
+  margin-top: 5.5rem;
+  line-height: 30px;
+}
+
+.projects__show-container {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 10rem;
+}
+
+.laptop__img {
+  width: 800px;
+  height: auto;
+}
+
+.project123__heading {
+  font-size: 3rem;
+}
+
+.project123__paragraph {
+  font-size: 1.8rem;
+}
+
+.left__side-grid {
+  width: 600px;
+}
+
+.right__side-grid {
+  width: 600px;
+}
