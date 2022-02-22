@@ -25,10 +25,10 @@
         <span class="header__logo-name">Niksa Nisavic</span>
         <nav id="navbar">
           <ul>
-            <li><a class="navbar-link" href="#">Home</a></li>
-            <li><a class="navbar-link" href="#">About</a></li>
-            <li><a class="navbar-link" href="#">Projects</a></li>
-            <li><a class="navbar-link" href="#">Contact</a></li>
+            <li><a class="navbar-link btn-link1" href="#">Home</a></li>
+            <li><a class="navbar-link" href="#about__me-link">About</a></li>
+            <li><a class="navbar-link" href="#section__projects-link">Projects</a></li>
+            <li><a class="navbar-link" href="#section__contact-link">Contact</a></li>
           </ul>
         </nav>
         <section id="welcome-section"></section>
@@ -41,10 +41,12 @@
           quae quod deserunt eius sapiente solutions for complex problems
         </h3>
         <button class="btn btn-white">Projects</button>
+        <div class="mouse"></div>
       </div>
+      
     </header>
 
-    <section class="about__me-section">
+    <section id="about__me-link" class="about__me-section">
       <div class="container">
         <div class="intro">
           <h2 class="about">About me</h2>
@@ -84,8 +86,8 @@
         </div>
       </div>
     </section>
-    <section class="section__projects">
-      <div class="section__projects-container">
+    <section id="section__projects-link" class="section__projects">
+      <div  class="section__projects-container">
         <h5 class="projects__headings">Projects</h5>
         <p class="projects__paragraph">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
@@ -128,10 +130,11 @@
           <button class="btn btn-green">Case study</button>
         </div>
       </div>
-    </section>
-    <section class="contact-section">
+    </section >
+
+    <section id="section__contact-link" class="contact-section">
       <div class="contact__section-div">
-        <h6>Contact</h6>
+        <span><h6>Contact</h6></span>
         <div class="contact-border"></div>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
@@ -161,8 +164,8 @@
         <div class="grid__right-footer">
           <h6>Social</h6>
           <div class="icons">
-          <i class="fa-brands fa-github"></i>
-          <i class="fa-brands fa-twitter"></i>
+          <link><i class="fa-brands fa-github"></i>
+          <link><i class="fa-brands fa-twitter"></i>
           <i class="fa-brands fa-instagram"></i>
           <i class="fa-brands fa-linkedin-in"></i>
           <i class="fa-brands fa-facebook"></i>
@@ -171,7 +174,9 @@
 
       </div>
 
-      <div></div>
+      <div class="copyright">
+        <p>© Copyright 2022. Made by <u>  <b>Niksa Nisavic</b></u></p>
+      </div>
 
     </footer>
   </body>

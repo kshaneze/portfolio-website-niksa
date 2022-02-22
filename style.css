@@ -8,6 +8,7 @@
 html {
   font-size: 62.5%;
   font-family: 'Source Sans Pro';
+  scroll-padding-top: 80px;
 }
 
 .header__content {
@@ -17,6 +18,8 @@ html {
   padding: 20px;
   position: fixed;
   background-color: white;
+  z-index: 25;
+  box-shadow: 0 30px 35px rgba(124, 122, 122, 0.1);
 }
 
 .header__content ul {
@@ -70,10 +73,11 @@ html {
   width: 100%;
   background: linear-gradient(to left, #204329, #2c4d2f);
   overflow: auto;
+  height: 100vh;
 }
 /* 204329 */
 .about__me-header {
-  margin-top: 27rem;
+  margin-top: 33rem;
   font-size: 6.1rem;
   color: white;
   text-transform: uppercase;
@@ -98,6 +102,7 @@ html {
   outline: none;
   font-weight: 600;
   color: rgba(17, 16, 16, 0.774);
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -106,6 +111,39 @@ html {
 
 .btn:active {
   transform: translateY(4px);
+}
+
+.mouse {
+  width: 25px;
+  height: 45px;
+  border: solid 2px white;
+  position: relative;
+  margin: auto;
+  border-radius: 60px;
+  top: 250px;
+}
+
+.mouse::before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  background-color: white;
+  top: 7px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+
+  opacity: 1;
+  animation: wheel 1.3s infinite;
+  animation-duration: 1.3s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: wheel;
 }
 
 .container {
@@ -132,7 +170,7 @@ h2 {
   height: 5px;
   width: 3rem;
   border-radius: 5px;
-  top: calc(100% + 6.5rem);
+  top: calc(115% + 6.1rem);
   left: 50%;
   transform: translateX(-50%);
 }
@@ -212,14 +250,15 @@ h2 {
 
 .section__projects {
   text-align: center;
-  height: 1800px;
+  height: 1900px;
 }
 
 .projects__headings {
   font-size: 4.2rem;
-  margin-top: 8rem;
+  margin-top: 5rem;
   text-transform: uppercase;
   letter-spacing: 1px;
+  padding-top: 100px;
 }
 .projects__headings::after {
   content: '';
@@ -228,7 +267,7 @@ h2 {
   height: 5px;
   width: 3rem;
   border-radius: 5px;
-  top: calc(197% + 3.5rem);
+  top: calc(219% + 3.5rem);
   left: 50%;
   transform: translateX(-50%);
 }
@@ -288,6 +327,7 @@ h2 {
   color: white;
   margin-top: 35px;
   text-align: center;
+  padding-top: 80px;
 }
 
 .contact-section::after {
@@ -297,14 +337,14 @@ h2 {
   height: 5px;
   width: 3rem;
   border-radius: 5px;
-  top: calc(388% + 6.5rem);
+  top: calc(420% + 6.5rem);
   left: 50%;
   transform: translateX(-50%);
 }
 
 .contact-section p {
   font-size: 18px;
-  margin-top: 30px;
+  margin-top: 50px;
   color: white;
   margin-bottom: 70px;
   line-height: 30px;
@@ -392,6 +432,7 @@ textarea {
   margin-right: 30px;
   border-radius: 5px;
   border: none;
+  cursor: pointer;
 }
 
 .btn-submit:active {
@@ -409,6 +450,7 @@ footer {
 footer h6 {
   font-size: 23px;
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 footer p {
@@ -425,61 +467,73 @@ footer p {
   margin-top: 50px;
 }
 
-.grid__left-footer {
-}
-
-.grid__right-footer {
-}
-
-.github {
-  background: white;
-  margin-right: 15px;
-}
-
-.gmail {
-  background-color: white;
-  width: 32px;
-  margin-right: 15px;
-}
-
 .fa-github {
   font-size: 30px;
   margin-right: 20px;
+  transition-duration: 0.3s;
+}
+.fa-github:hover {
+  transform: translateY(-4px);
+  transform: scale(1.3);
 }
 
 .fa-twitter {
   font-size: 30px;
   margin-right: 20px;
+  transition-duration: 0.3s;
 }
 
 .fa-twitter:hover {
   color: #1da1f2;
+  transform: translateY(-4px);
+  transform: scale(1.3);
 }
 
 .fa-instagram {
   font-size: 30px;
   margin-right: 20px;
+  transition-duration: 0.3s;
 }
 .fa-instagram:hover {
   color: #fd5949;
+  transform: translateY(-4px);
+  transform: scale(1.3);
 }
 
 .fa-linkedin-in {
   font-size: 30px;
   margin-right: 20px;
+  transition-duration: 0.3s;
 }
 .fa-linkedin-in:hover {
   color: #2867b2;
+  transform: translateY(-4px);
+  transform: scale(1.3);
 }
 
 .fa-facebook {
   font-size: 30px;
   margin-right: 20px;
+  transition-duration: 0.3s;
 }
 
 .fa-facebook:hover {
   color: #3b5998;
+  transform: translateY(-4px);
+  transform: scale(1.3);
 }
 .icons {
   margin-top: 25px;
+  margin-bottom: 80px;
+}
+
+.copyright {
+  text-align: center;
+  width: 1150px;
+  margin: auto;
+  border-top: 1px solid rgb(158, 154, 154, 0.5);
+}
+.copyright p {
+  font-size: 15px;
+  font-weight: 200;
 }
