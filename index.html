@@ -3,9 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
     <title>Personal Web Site</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,20 +14,21 @@
     />
 
     <link href="img\fontawesome-free-6.0.0-web\css\all.css" rel="stylesheet" >
+
+    <script src="script.js" defer></script>
+    
   </head>
   <body>
     <header class="header">
-      <div class="header__content">
-        <div class="header__img">
-          <img src="img/24.jpg" alt="My Picture" class="header__logo-img" />
-        </div>
+      <div class="header__content"> 
+        <img src="img/24.jpg" alt="My Picture" class="header__logo-img" /> 
         <span class="header__logo-name">Niksa Nisavic</span>
         <nav id="navbar">
-          <ul>
-            <li><a class="navbar-link btn-link1" href="#">Home</a></li>
-            <li><a class="navbar-link" href="#about__me-link">About</a></li>
-            <li><a class="navbar-link" href="#section__projects-link">Projects</a></li>
-            <li><a class="navbar-link" href="#section__contact-link">Contact</a></li>
+          <ul class="nav-links">
+            <li class="nav-item"><a class="navbar-link btn-link1" href="#">Home</a></li>
+            <li class="nav-item"><a class="navbar-link" href="#about__me-link">About</a></li>
+            <li class="nav-item"><a class="navbar-link" href="#section__projects-link">Projects</a></li>
+            <li class="nav-item"><a class="navbar-link" href="#section__contact-link">Contact</a></li>
           </ul>
         </nav>
         <section id="welcome-section"></section>
@@ -40,7 +40,7 @@
           tempora explicabo<br />
           quae quod deserunt eius sapiente solutions for complex problems
         </h3>
-        <button class="btn btn-white">Projects</button>
+        <button id="btn-projects" class="btn btn-white">Projects</button>
         <div class="mouse"></div>
       </div>
       
@@ -68,7 +68,7 @@
               used hundreds of web and mobile apps in different industries and
               verticals. Feel free to contact me here.
             </p>
-            <button class="btn btn-green">Contact</button>
+            <button id="btn-contact" class="btn btn-green">Contact</button>
           </div>
           <div class="right">
             <h4 class="Get__toknowmy-skills">My Skills</h4>
@@ -164,8 +164,8 @@
         <div class="grid__right-footer">
           <h6>Social</h6>
           <div class="icons">
-          <link><i class="fa-brands fa-github"></i>
-          <link><i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-github"></i>
+          <i class="fa-brands fa-twitter"></i>
           <i class="fa-brands fa-instagram"></i>
           <i class="fa-brands fa-linkedin-in"></i>
           <i class="fa-brands fa-facebook"></i>

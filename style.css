@@ -9,6 +9,7 @@ html {
   font-size: 62.5%;
   font-family: 'Source Sans Pro';
   scroll-padding-top: 80px;
+  scroll-behavior: smooth;
 }
 
 .header__content {
@@ -70,7 +71,7 @@ html {
 .about__me {
   text-align: center;
   height: 800px;
-  width: 100%;
+
   background: linear-gradient(to left, #204329, #2c4d2f);
   overflow: auto;
   height: 100vh;
