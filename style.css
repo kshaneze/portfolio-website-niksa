@@ -15,7 +15,7 @@ html {
 .header__content {
   display: flex;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   padding: 20px;
   position: fixed;
   background-color: white;
@@ -70,11 +70,10 @@ html {
 
 .about__me {
   text-align: center;
-  height: 800px;
 
   background: linear-gradient(to left, #204329, #2c4d2f);
   overflow: auto;
-  height: 100vh;
+  min-height: 100vh;
 }
 /* 204329 */
 .about__me-header {
@@ -147,8 +146,18 @@ html {
   animation-name: wheel;
 }
 
+@media only screen and (max-width: 1175px) {
+  .about__me-header {
+    font-size: 5rem;
+  }
+  .about__me-text {
+    font-size: 1.8rem;
+    font-weight: 300;
+  }
+}
+
 .container {
-  height: 800px;
+  min-height: 800px;
 }
 .about__me-section {
   overflow: hidden;
@@ -184,12 +193,10 @@ h2 {
 }
 
 .section__to-know {
-  width: 1350px;
-  height: 350px;
-
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  max-width: 1350px;
+  min-height: 450px;
+  justify-content: center;
+  margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding-top: 60px;
@@ -232,7 +239,6 @@ h2 {
 .skill {
   padding: 10px;
   margin: 7px;
-
   background-color: #e7e7e3;
   border-radius: 5px;
 }
@@ -249,9 +255,22 @@ h2 {
   background-color: #073d0b;
 }
 
+@media only screen and (max-width: 1175px) {
+  .section__to-know {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 100px;
+    margin: auto;
+    margin-left: 50px;
+  }
+  .right {
+    min-height: 500px;
+  }
+}
+
 .section__projects {
   text-align: center;
-  height: 1900px;
+  min-height: 1900px;
 }
 
 .projects__headings {
@@ -281,16 +300,18 @@ h2 {
 }
 
 .projects__show-container {
-  position: absolute;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-left: 200px;
-  margin-right: 100px;
+  grid-template-columns: repeat(2, minmax(400px, 1fr));
+  grid-template-rows: 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr; */
+  max-width: 1600px;
+  justify-content: center;
+  margin: auto;
   margin-top: 10rem;
 }
 
 .laptop__img {
-  width: 800px;
+  max-width: 800px;
   height: auto;
 }
 
@@ -303,20 +324,28 @@ h2 {
 }
 
 .left__side-grid {
-  width: 600px;
+  max-width: 400px;
 }
 
 .right__side-grid {
-  width: 600px;
+  max-width: 800px;
 }
 
 .right__side-grid h6 {
-  margin-top: 130px;
   margin-bottom: 25px;
+}
+@media only screen and (max-width: 1175px) {
+  .projects__show-container {
+    display: block;
+  }
+  .right__side-grid {
+    margin: auto;
+    padding: 45px;
+  }
 }
 
 .contact-section {
-  width: 100%;
+  max-width: 100vw;
   height: 1200px;
   background-color: #204329;
   overflow: hidden;
@@ -353,8 +382,8 @@ h2 {
 }
 .contact-div {
   margin: auto;
-  width: 800px;
-  height: 730px;
+  max-width: 800px;
+  min-height: 730px;
   background-color: white;
   border-radius: 6px;
 }
@@ -441,7 +470,7 @@ textarea {
 }
 
 footer {
-  width: 100%;
+  width: 100vw;
   height: 350px;
   background-color: black;
   color: white;
@@ -461,7 +490,7 @@ footer p {
 
 .footer-container {
   display: flex;
-  width: 1200px;
+  max-width: 1200px;
   margin: auto;
   justify-content: space-between;
   padding: 25px;
