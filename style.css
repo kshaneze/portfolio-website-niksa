@@ -171,7 +171,33 @@ html {
     justify-content: space-around;
   }
 }
+@media only screen and (max-width: 580px) {
+  .about__me-header {
+    font-size: 4rem;
+    padding-bottom: 20px;
+    margin-top: 15rem;
+  }
 
+  .about__me-text {
+    font-size: 1.6rem;
+    font-weight: 300;
+    padding: 5px;
+    margin-top: 5rem;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 13px 45px 13px 45px;
+  }
+  .header__content ul {
+    font-size: 18px;
+  }
+
+  #navbar {
+    width: 100%;
+    margin: 0;
+  }
+}
 .container {
   min-height: 800px;
 }
@@ -189,7 +215,16 @@ h2 {
   text-transform: uppercase;
 }
 
-.about::after {
+.line1 {
+  width: 3rem;
+  height: 5px;
+  background-color: #204329;
+  margin: auto;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+/* .about::after {
   content: '';
   position: absolute;
   background-color: #204329;
@@ -199,11 +234,11 @@ h2 {
   top: calc(115% + 6.1rem);
   left: 50%;
   transform: translateX(-50%);
-}
+} */
 
 .about__me-paragraph {
   font-size: 2rem;
-  margin-top: 30px;
+  margin-top: 10px;
   padding: 15px;
   color: rgb(104, 102, 102);
 }
@@ -301,6 +336,12 @@ h2 {
   }
 }
 
+@media only screen and (max-width: 800px) {
+  .section__to-know {
+    margin: 50px;
+  }
+}
+
 .section__projects {
   text-align: center;
   min-height: 2250px;
@@ -313,7 +354,16 @@ h2 {
   letter-spacing: 1px;
   padding-top: 100px;
 }
-.projects__headings::after {
+
+.line2 {
+  width: 3rem;
+  height: 5px;
+  background-color: #204329;
+  margin: auto;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+/* .projects__headings::after {
   content: '';
   position: absolute;
   background-color: #204329;
@@ -323,12 +373,12 @@ h2 {
   top: calc(219% + 3.5rem);
   left: 50%;
   transform: translateX(-50%);
-}
+} */
 
 .projects__paragraph {
   font-size: 2rem;
   color: rgb(104, 102, 102);
-  margin-top: 5.5rem;
+  margin-top: 2.6rem;
   line-height: 30px;
 }
 
@@ -410,7 +460,16 @@ h2 {
   padding-top: 80px;
 }
 
-.contact-section::after {
+.line3 {
+  width: 3rem;
+  height: 5px;
+  background-color: white;
+  margin: auto;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+/* .contact-section::after {
   content: '';
   position: absolute;
   background-color: white;
@@ -420,11 +479,11 @@ h2 {
   top: calc(472%);
   left: 50%;
   transform: translateX(-50%);
-}
+} */
 
 .contact-section p {
   font-size: 18px;
-  margin-top: 50px;
+  margin-top: 30px;
   color: white;
   margin-bottom: 70px;
   line-height: 30px;
@@ -520,6 +579,13 @@ textarea {
 
 .btn-submit:active {
   transform: translateY(4px);
+}
+
+@media only screen and (width: 550px) {
+  .btn-submit {
+    padding: 20px 70px 20px 70px;
+    margin: auto;
+  }
 }
 
 footer {
