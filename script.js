@@ -70,18 +70,20 @@ navContainer.addEventListener('mouseout', function (e) {
 });
 
 // Sticky navigation
-
+const nav = document.querySelector('.header__content');
 const header = document.querySelector('.header');
 
 const stickyNav = function (entries) {
   const [entry] = entries;
 
-  if (!entry.isIntersecting) .classList.add('sticky');
+  if (!entry.isIntersecting) nav.classList.add('sticky');
+  else nav.classList.remove('sticky');
 };
 
 const headerObserver = new IntersectionObserver(stickyNav, {
   root: null,
   threshold: 0,
+  rootMargin: '-95px',
 });
 
 headerObserver.observe(header);
