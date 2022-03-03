@@ -17,10 +17,15 @@ html {
   align-items: center;
   width: 100vw;
   padding: 20px;
-  position: fixed;
+
   background-color: white;
   z-index: 25;
   box-shadow: 0 30px 35px rgba(124, 122, 122, 0.1);
+}
+
+.sticky {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .header__content ul {

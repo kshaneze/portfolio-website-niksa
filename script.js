@@ -69,8 +69,24 @@ navContainer.addEventListener('mouseout', function (e) {
   }
 });
 
-// Revealing Elenets on scroll
+// Sticky navigation
 
+const header = document.querySelector('.header');
+
+const stickyNav = function (entries) {
+  const [entry] = entries;
+
+  if (!entry.isIntersecting) .classList.add('sticky');
+};
+
+const headerObserver = new IntersectionObserver(stickyNav, {
+  root: null,
+  threshold: 0,
+});
+
+headerObserver.observe(header);
+
+// Revealing Elmenets on scroll
 const allSections = document.querySelectorAll('.section');
 
 const revealSection = function (entries, observer) {
