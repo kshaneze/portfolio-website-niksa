@@ -68,3 +68,25 @@ navContainer.addEventListener('mouseout', function (e) {
     logoText.style.opacity = 1;
   }
 });
+
+// Revealing Elenets on scroll
+
+const allSections = document.querySelectorAll('.section');
+
+const revealSection = function (entries, observer) {
+  const [entry] = entries;
+
+  if (!entry.isIntersecting) return;
+  entry.target.classList.remove('section--hidden');
+  observer.unobserve(entry.target);
+};
+
+const sectionObserver = new IntersectionObserver(revealSection, {
+  root: null, // viewport
+  threshold: 0.15, // reveal when you reach 15% of the section
+});
+
+allSections.forEach(function (section) {
+  sectionObserver.observe(section);
+  section.classList.add('section--hidden');
+});
