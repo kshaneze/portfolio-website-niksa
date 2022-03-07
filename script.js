@@ -24,11 +24,14 @@ btnContactMe.addEventListener('click', function (e) {
 // Menu fade animation
 navContainer.addEventListener('mouseover', function (e) {
   if (e.target.classList.contains('navbar-link')) {
+    // when mouse goes over(inside) area
     const mouseovered = e.target;
 
+    //  In this step im moving up in parent element div (closest(header__content)), and from there Selecting logo image
     const logoImg = mouseovered
       .closest('.header__content')
       .querySelector('img');
+    // In this step im moving up in parent element div (closest(header__content)), and from there Selecting logo text
     const logoText = mouseovered
       .closest('.header__content')
       .querySelector('.header__logo-name');
@@ -48,6 +51,7 @@ navContainer.addEventListener('mouseover', function (e) {
 
 navContainer.addEventListener('mouseout', function (e) {
   if (e.target.classList.contains('navbar-link')) {
+    // when mouse goes outside of area
     const mouseovered = e.target;
 
     const logoImg = mouseovered
@@ -83,7 +87,7 @@ const stickyNav = function (entries) {
 const headerObserver = new IntersectionObserver(stickyNav, {
   root: null,
   threshold: 0,
-  rootMargin: '-95px',
+  rootMargin: '-92px',
 });
 
 headerObserver.observe(header);
