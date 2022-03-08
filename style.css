@@ -331,6 +331,7 @@ h2 {
 
   .Get__toknow-me {
     margin: auto;
+    margin-top: 40px;
   }
 
   .get__toknowme-paragraph {
@@ -348,6 +349,7 @@ h2 {
 @media only screen and (max-width: 800px) {
   .section__to-know {
     margin: 50px;
+    margin-top: 35px;
   }
 }
 
