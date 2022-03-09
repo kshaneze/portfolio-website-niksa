@@ -98,16 +98,17 @@ html {
 
 .btn {
   margin-top: 50px;
-  font-size: 19px;
+  font-size: 20px;
   text-transform: uppercase;
   padding: 17px 80px 17px 80px;
   background-color: white;
   border-radius: 6px;
   border: none;
   outline: none;
-  font-weight: 600;
+  font-weight: 700;
   color: rgba(17, 16, 16, 0.774);
   cursor: pointer;
+  font-family: inherit;
 }
 
 .btn:hover {
@@ -197,14 +198,14 @@ html {
   .btn {
     font-size: 14px;
     padding: 13px 45px 13px 45px;
+    font-family: inherit;
   }
-  .header__content ul {
-    font-size: 18px;
+  .header__content {
+    display: none;
   }
 
-  #navbar {
-    width: 100%;
-    margin: 0;
+  .nav-wrapper {
+    display: none;
   }
 }
 .container {
@@ -303,6 +304,7 @@ h2 {
   border-radius: 5px;
 }
 .btn-green {
+  font-family: inherit;
   background-color: #204329;
   color: white;
   padding: 15px 40px 15px 40px;
@@ -408,6 +410,10 @@ h2 {
   max-width: 800px;
   height: auto;
   margin-top: 100px;
+  transition: all 0.4s ease;
+}
+.laptop__img:hover {
+  transform: scale(1.04);
 }
 
 .project123__heading {
@@ -416,6 +422,7 @@ h2 {
 
 .project123__paragraph {
   font-size: 1.8rem;
+  padding-left: 7px;
 }
 
 .left__side-grid {
@@ -585,6 +592,7 @@ textarea {
   border-radius: 5px;
   border: none;
   cursor: pointer;
+  font-family: inherit;
 }
 
 .btn-submit:active {
