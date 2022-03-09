@@ -422,7 +422,8 @@ h2 {
 
 .project123__paragraph {
   font-size: 1.8rem;
-  padding-left: 7px;
+  padding-left: 15px;
+  text-align: left;
 }
 
 .left__side-grid {
