@@ -19,8 +19,6 @@ btnContactMe.addEventListener('click', function (e) {
   sectionContactMe.scrollIntoView({ behavior: 'smooth' });
 });
 
-// Sticky navigation
-
 // Menu fade animation
 navContainer.addEventListener('mouseover', function (e) {
   if (e.target.classList.contains('navbar-link')) {
